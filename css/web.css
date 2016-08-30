@@ -1,0 +1,134 @@
+body{
+	background: #69C5EC;
+	background-image: url("gambar.gif");
+}
+*{margin: 0px; padding: 0px;}
+header, footer, section, nav{display: block;}
+.webstatis{
+	margin: 15px auto;
+	width: 980px;
+}
+#logo{
+float: left;
+height: 125px;
+margin-right: 10px;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+#judul{
+	background: url(../gambar/index.jpg); background-size: contain;
+	height: 115px;
+	margin: 10px auto -15px auto;
+	padding: 10px 0px 20px 0px;
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 0 10px rgb(0,0,0) inset;
+}
+#judul h1{
+	font-size: 30px;
+	line-height: 38px;
+	font-weight: 500px;
+	color: blue;
+}
+#judul h2{
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: 300px;
+	color: cyan;
+}
+
+/*bagian menu-navigasi*/
+
+nav ul{
+	width: 100%;
+	background: #A77410;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	padding: 0;    
+	border-radius: 0 0 0 0;
+	box-shadow: 0 0 10px rgb(0,0,0) inset;                
+}
+nav ul:after{
+	content: "";
+	clear: both;
+	display: block;
+	border-radius: 10px;
+}
+nav ul li{
+	float: left;
+}
+nav ul li:hover{
+	background: #4E9A06;
+	border-radius: 10px;
+}
+nav ul li:hover a{
+	color: #FFFFFF
+}
+nav ul li a{
+display: block;
+padding: 10px 30px;
+color: #ffff00;
+text-decoration: none;
+}
+/*menghilangkan semua sub menu*/
+nav ul ul{
+display: none;
+background: #ff0000;
+border-radius: 0;
+padding: 0;
+position: absolute;
+top: 100%;
+width: 200px;
+}
+/*munculkan submenu ketika didekati kursor*/
+nav ul li:hover > ul{
+display: block;
+border-radius: 10px;
+}
+nav ul ul li{
+float: none;
+border-top: 1px solid #000000;
+position: relative;
+}
+nav ul ul li a {
+padding: 10px 20px;
+color: #fff;
+}
+nav ul ul li a:hover{
+background: #ffa500;
+border-radius: 10px;
+}
+nav ul ul ul {
+position: absolute;
+left: 100%;
+top: 0;
+}
+
+/*bagian isi*/
+#konten{
+	float: left;
+	width: 640px;
+	background-image: url("batik.jpg");
+	color: white;
+	padding-top: 10px;
+}
+#sidebar{
+	float: right;
+	width: 320px;
+	background-image: url("book.jpg");
+	padding-left: 20px;
+}
+
+/*bagianbawah/footer*/
+ footer{
+	clear: both;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-family: verdana;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	box-shadow:  0 0 10px rgb(0,0,0) inset;
+	text-shadow: 5px 5px 5px;
+	background: url(../gambar/index.jpg); background-size: contain;
+ }
